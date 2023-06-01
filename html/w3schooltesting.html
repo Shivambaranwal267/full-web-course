@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        strong {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.75rem;
+
+    // Position the line behind the text so that
+    // it is still easily readable
+    z-index: -1;
+
+    // The SVG is added as an SVG background image
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+    background-repeat: no-repeat;
+
+    // This allows the SVG to flex in size to fit
+    // any length of word. If the word is short,
+    // the SVG will be stretched vertically, if it
+    // is long, the SVG will be stretched horizontally.
+    // The jagged nature of this particular SVG works
+    // with this transforming.
+    background-size: cover;
+  }
+}
+
+p > strong {
+  font-weight: 400;  
+
+  &::after {
+    // Specific positioning for smaller text
+    bottom: -0.2rem;
+    height: 0.5rem;
+    left: -0.25rem;
+    right: -0.25rem;
+  }
+}
+
+
+// ---------------------------------
+// Other properties for the demo, not related to
+// the underlined text
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, p {
+  font-family: "dosis", sans-serif;
+  max-width: 800px;
+  margin: 0 5% 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+    </style>
+    <div>
+        <h1>This is an <strong>example</strong> block of <strong>text</strong>.</h1>
+        <p>An SVG is used to <strong>emphasize</strong> a single word of a block of text by giving it an underline that uses an SVG. Semantically it is emphasized with a <code>strong</code> tag and visually it is emphasized with the SVG.</p>
+      </div>
+      
+</body>
+</html>
