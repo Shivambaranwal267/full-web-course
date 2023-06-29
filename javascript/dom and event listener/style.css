@@ -1,9 +1,8 @@
  .container {
     width: 500px;
-
     background-color: #f5f5dc;
     display: grid;
-    grid-template-columns: auto auto auto auto; 
+    /* grid-template-columns: auto auto auto auto;  */
     grid-template-columns: repeat(auto-fill, 100px);
     gap: 20px;
 } 

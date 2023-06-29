@@ -1,7 +1,7 @@
 // for loop
-
-/*for (let i=1 ; i<=10 ;i++) {
-    console.log('hello', i);
+/*
+for (let i = 1; i <= 10; i++) {
+  console.log("hello", i);
 }*/
 
 // while loop
@@ -17,33 +17,33 @@ while (i < n) {
 
 // do while loop
 
-/*let n=5;
-let i=0;
+/*
+let n = 5;
+let i = 0;
 do {
-    console.log(i,'hello');
-    i++;
-
-} while (i < n); */
+  console.log("hello", i);
+  i++;
+} while (i < n);
+*/
 
 // break
 
-/*for (let i = 0; i <= 5; i++) {
+/*
+for (let i = 0; i <= 5; i++) {
   if (i == 3) {
     break;
   }
   console.log("hello", i);
-}*/
-
-
+}
+*/
 
 // continue
-   /*  for (let i = 0; i <=5; i++) {
+/*  for (let i = 0; i <=5; i++) {
     if (i == 3 || i==4) {
       continue;
     }
     console.log("hello", i);
   }   */
-
 
 // for in /for loop another exampmle
 /*
@@ -51,9 +51,8 @@ const words = ["Shivam", "karn", "arjun", "Krishna"];
 
 for (let i = 0; i < words.length; i++) {
   console.log("hello", words[i]);
-}  */
-
-
+}  
+*/
 // for ... in loop
 /*
 const words = ["Shivam", "karn", "arjun", "Krishna"];

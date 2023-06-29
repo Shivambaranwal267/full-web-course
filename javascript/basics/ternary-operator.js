@@ -1,6 +1,6 @@
 
 
-// const age =29;
+// const age = 29;
 
 // if(age > 19) {
 //      console.log('You can drive');
@@ -13,7 +13,7 @@
 
 // ternary operator
 
-const age =Number(prompt("enter age:")) ;
+const age = Number(prompt("enter age:"));
 
 
- age > 19 ? alert('You can drive') : alert('You cannot drive');
+age > 19 ? alert('You can drive') : alert('You cannot drive');

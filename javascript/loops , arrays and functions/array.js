@@ -5,7 +5,7 @@
 
 console.log(words.length); // define the length of the class
 console.log(words);*/
-   //               0          1         2        3
+//               0          1         2        3
 
 /*
    const words = ['Shivam', 'karn', 'arjun', 'Krishna'];
@@ -13,7 +13,8 @@ console.log(words);*/
 //  words[5] = 'menu';
 //  words[6] = 'minu';
 
- console.log(words[4]);*/
+ console.log(words[4]);
+ console.log(words);*/
 
 // null is also a value
 
@@ -27,27 +28,30 @@ console.log(words);*/
 console.log(words);
 console.log(words.length); */
 
- /* const words = ['Shivam', 'Kartik', 'Vishal', 'Burnol', 'Zebra' ];
+/*
+const words = ['Shivam', 'Kartik', 'Vishal', 'Burnol', 'Zebra' ];
 console.log(words);
 words.sort(); 
 console.log(words);
 
  for(let i in words) {
      console.log('hello', words[i]);
- }    
+ }    */
+/*
+const words = ["Shivam", "Kartik", "Vishal", "Burnol"];
+// const isPresent = words.includes("Shivam");
+
+const index = words.indexOf("Shivam");
+console.log(index);
+// console.log(isPresent);
 */
-/*const words = ['Shivam', 'Kartik', 'Vishal', 'Burnol' ];
-  const isPresent = words.includes("Shivam");
+/*
+ const words = ['Shivam', 'Kartik', 'Vishal', 'Burnol' ];
 
-const index=words.indexOf('Shivam')
- console.log(index); 
- console.log(isPresent);*/
-
-/* const words = ['Shivam', 'Kartik', 'Vishal', 'Burnol' ];
-
- words.splice(2 , 0 ,'Anuj')
-//  words.splice(1 , 2 ,'Ghan','Ramesh'  , 'Suresh' );
- console.log(words);*/
+//  words.splice(2 , 0 ,'Anuj')
+ words.splice(1 , 2 ,'Ghan','Ramesh'  , 'Suresh' );
+ console.log(words);
+ */
 
 /*
  let a = [10, 4, 23,'hi'];
@@ -67,17 +71,15 @@ const myFunction = (element) => {
 
 a.forEach(myFunction) */
 
+let a = [10, 5, 23];
 
-let a= [10,5,23]
-
-a.sort((n1 , n2) => {
-    // return n1-n2;
-    // if(n1 > n2) return 1;
-    //  if(n1 < n2) return -1;
-    // return 0;  // the algo can replace-able is
-    
-    return n1-n2;
-
-})
+a.sort((n1, n2) => {
+  // return n1 - n2;
+  // if(n1 > n2) return 1;
+  //  if(n1 < n2) return -1;
+  // return 0;  // the algo can replace-able is
+  return n1 - n2;
+});
+// a.sort();
 
 console.log(a);

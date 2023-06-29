@@ -4,7 +4,7 @@ const orderPizza = () => {
   //   }, 2000);
 
   return new Promise(function (resolve, reject) {
-    // ap kuch bhi deskte hai resolve ya reject ke badle
+    // ap kuch bhi likh skte hai resolve ya reject ke badle
     setTimeout(() => {
       const isAvailable = false;
       if (isAvailable) {

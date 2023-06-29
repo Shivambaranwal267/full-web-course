@@ -12,7 +12,7 @@ const { name, age: myAge } = obj;
 
 // default parameter
 
-function greet(name = "What is your name") { // passing deafault parameter
+function greet(name = "What is your name") { // passing default parameter
   console.log("hello " + name);
 }
 

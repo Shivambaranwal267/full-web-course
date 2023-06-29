@@ -10,10 +10,11 @@ const filterNumber = (conditionFunction) => {
     }
   }
   return b;
-};
+}
+
 
 const IsEven = (number) => {
-  // console.log(number + ' called');
+  console.log(number + ' called');
   return number % 2 == 0;
 };
 

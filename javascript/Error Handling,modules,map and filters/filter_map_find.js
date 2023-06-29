@@ -1,29 +1,30 @@
 /*
 //  filter
-// important note: it does not change the original array 
-// it give sonly boolean value
+// important note: it does not change the original array
+// it give so only boolean value
 // it is higher order function
 const a = [11, 22, 31, 44, 57, 68, 72, 81];
 
 const iseven = (num) => {
   return num % 2 == 0;
 };
+
 const isodd = (num) => {
   return num % 2 !== 0;
 };
 
 // let count = 1;
 
-// const result = a.filter(iseven);
 // const result = a.filter((element, index, arr) => {
 //   console.log(element, index, arr,  count++);
 //   return true;
 // });
 
+const result = a.filter((element) => {    // if boolean value true then its return
+  return element % 3 == 0;
+});
 
-// const result = a.filter((element) => {    // if boolean value true then its return
-//   return element % 3 == 0;
-// });
+console.log(result);
 
 const result1 = a.filter(iseven);
 const result2 = a.filter(isodd);
@@ -31,7 +32,9 @@ const result2 = a.filter(isodd);
 console.log(result1 + " even");
 console.log(result2 + " odd");
 
-console.log(a);  */
+console.log(a);
+
+*/
 
 /*
 // map
@@ -48,33 +51,36 @@ const isodd = (num) => {
 };
 
 function square(num) {
-  return num*num;
+  return num * num;
 }
 
 function negative(num) {
   return -num;
 }
 
-// javascript also gives in decimal value also
+// // javascript also gives in decimal value also
 
-
-// const result1 = a.map((num) =>num/2)
+// const result1 = a.map((num) => num / 2);
 // const result1 = a.map((num) => "my num is " + num) // string passes
-const result1 = a.map(square);
-// const result2 = a.filter(negative);
+// const result1 = a.map(square);
+// const result2 = a.filter(negative); // in map its gives only negative number but in filter its same number
+// const result2 = a.map(iseven) // its gives boolean value
 
-console.log(result1);
-// console.log(result2);
+
+// console.log(result1);
+console.log(result2);
 */
 
 // find
-// when u use only only single  elemt will show
+// when u use only only single element will show
 
+/*
 const a = [1, 2, 3, 4, 5, 6, 7];
 
-// const found = a.find((element) => element % 2 == 0);
+const found = a.find((element) => element % 2 == 0);
 
-// console.log(found);
+console.log(found);
+*/
 
 const students = [
   {
@@ -96,14 +102,13 @@ const students = [
 ];
 
 const grades = students.map((element) => {
-  if(element.marks< 50){
+  if (element.marks > 50) {
+    element.isPassed = true;
+  } else {
     element.isPassed = false;
   }
-  else {
-    element.isPassed = true;
-  }
   return element;
-})
+});
 
 const found = students.find((element) => {
   return element.marks > 50;

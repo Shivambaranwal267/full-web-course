@@ -1,19 +1,8 @@
-const orderpizza = (callback,errorcallback) => {
-    
+const orderpizza = (callback, errorcallback) => {
   bakepizza((pizza) => {
     callback(pizza);
   });
 };
-
-function bakepizza(callback) {
-    makeDough((dough) => {
-    setTimeout(() => {
-    let pizza =  dough +"🍕";
-    console.log("baked the", pizza);
-    callback(pizza);
-  }, 2000)
-});
-}
 
 const makeDough = (callback) => {
   setTimeout(() => {
@@ -22,6 +11,16 @@ const makeDough = (callback) => {
     callback(dough);
   }, 2000);
 };
+
+function bakepizza(callback) {
+  makeDough((dough) => {
+    setTimeout(() => {
+      let pizza = dough + "🍕";
+      console.log("baked the", pizza);
+      callback(pizza);
+    }, 2000);
+  });
+}
 
 let notifyMeOrSuccess = (pizza) => {
   console.log("Here is my notification for", pizza);

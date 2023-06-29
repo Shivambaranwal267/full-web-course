@@ -1,28 +1,28 @@
 /*const countingUL = document.querySelector("#counting");
 
 // const UlChildren = countingUL.childNodes;
-const UlChildren = countingUL.children;
+// const UlChildren = countingUL.children;
 
-// const UlParent = countingUL.parentElement;
+const UlParent = countingUL.parentElement;
 
 
 console.log(UlChildren);
-// console.log(UlParent); 
+console.log(UlParent); 
 */
-
 /*
+
 const oneLi = document.getElementById("one");
 const siblingOneLi = oneLi.parentNode.childNodes;
 console.log(siblingOneLi);
 console.log(oneLi.firstChild.nodeValue);
 
-// oneLi.innerHTML = "<h3>ONE</h3>";
+oneLi.innerHTML = "<h3>ONE</h3>";
 
-// oneLi.style.color="red";
-// oneLi.style.textTransform="lowercase";
+oneLi.style.color="red";
+oneLi.style.textTransform="lowercase";
 
-// console.log(oneLi.innerHTML);
-// console.log(oneLi.firstChild);
+console.log(oneLi.innerHTML);
+console.log(oneLi.firstChild);
 
 
 for (let i = 0; i < siblingOneLi.length; i++) {
@@ -32,6 +32,7 @@ for (let i = 0; i < siblingOneLi.length; i++) {
 }
 */
 
-// console.log(document.body);  //for body
 
-// console.log(document.documentElement); // full HTML access
+console.log(document.body);  //for body
+
+console.log(document.documentElement); // full HTML access

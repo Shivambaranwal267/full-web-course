@@ -1,18 +1,22 @@
 /*const age = 24;
  console.log("age is:" + age);
  console.log(typeof age);*/
-  // type conversion
- /*let x="234";
- const y=Number(x);
+
+// type conversion
+
+/*let x = "234";
+ const y = Number(x);
  console.log(typeof y);*/
+
 //  arithmetic opertors + , - , / , - , * , ++ , -- , ** .
- /*let d=23;
+/*let d=23;
   d++;
   console.log(d);
   let m=2**3;    // means 2 power of 3
   console.log(m);*/
+  
 //  conditional statement
- /*let a = 23;
+/*let a = 23;
  let b = 23;
  console.log(a > b);
  console.log(a < b);
@@ -21,7 +25,6 @@
  console.log(a >= b);
  console.log(a <= b);
  console.log(a === b);*/
- 
 
 // to start blank page, type about:blank in a browser*/
 
@@ -29,16 +32,18 @@
 
 // if/else use method
 
-/*const age = 19;
+/*
+const age = 19;
 
 if(age > 19) {
     console.log('you can drive');
 }
 else {
     console.log('you cannot drive');
-}*/
+} */
 
-/*const day = 1;
+/*
+const day = 2;
 console.log('calculating');
 
 if(day==1) {
@@ -53,11 +58,12 @@ else if(day == 3) {
 else {
     console.log("invalid day");
 }
-console.log('done');*/
-
+console.log('done');
+*/
 // switch case starts here
 
-/*const day = 1;
+/*
+const day = 1;
 console.log("calculating");
 
 switch (day) {
@@ -77,4 +83,5 @@ switch (day) {
   default:
     console.log("invalid day");
     break;
-}*/
+}
+*/

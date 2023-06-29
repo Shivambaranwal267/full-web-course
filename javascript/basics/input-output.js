@@ -1,14 +1,14 @@
-//   prompt('Hi, What\'s your name');
+  // prompt('Hi, What\'s your name');
+/*
 
-
- /*let name = prompt('Hi, What\'s your name');
+ let name = prompt('Hi, What\'s your name');
  
 
  name+= " Hello "
 
 
- console.log(name);*/
-
+ console.log(name);
+ */
   /*const a = prompt("enter a");   //2
   const b = prompt("enter b");   //3
 

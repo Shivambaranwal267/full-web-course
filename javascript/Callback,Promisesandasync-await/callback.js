@@ -1,14 +1,14 @@
-/*
-const orderPizza = (callback) => {
-  // loi bhi argument pass kar skte ho
-  setTimeout(() => {
-    let Pizza = "🍕";
-    callback(Pizza); // ap kuch bhi likh skte ho callback ke badle but wo callback hi pass karega
 
-    // return Pizza;
-  }, 2000);
-};
-*/
+// const orderPizza = (callback) => {
+//   // koi bhi argument pass kar skte ho
+//   setTimeout(() => {
+//     let Pizza = "🍕";
+//     callback(Pizza); // ap kuch bhi likh skte ho callback ke badle but wo callback hi pass karega
+
+//     return Pizza;
+//   }, 2000);
+// };
+
 
 // callback hell
 const orderPizza = (myFunction) => {  // my function is a callback function

@@ -3,11 +3,11 @@
 
 // const b = 12;
 
-// const c = a + b;  it takes nanosec to run
+// const c = a + b;   // it takes nanosec to run
 
 // console.log("Ordering burger");
 // for (let i = 0; i < 5000000000; i++) {
-//   let n = i * 987897;
+//   let n = i * 987897000000000;
 // }
 // console.log("burger eaten");
 
@@ -21,8 +21,8 @@
 
 // anonymous function
 // setTimeout(() => {
-//     greet("Shivam")
-// }, 2000)
+//   greet("Shivam");
+// }, 2000);
 
 // const greetTimeout =  setTimeout(() => {
 //     greet({
@@ -41,7 +41,7 @@
 // clearTimeout(timeoutId); // clear a setTimeout
 
 // time takes in millisecond(ms) i.e: 1s = 1000ms
-//setTimeout(greet("Shivam"), 5000 ); // it direct executes
+// setTimeout(greet("Shivam"), 5000 ); // it direct executes
 //setTimeout(greet, 5000, "Shivam" );
 
 // console.log("this is written after greet");
@@ -52,13 +52,13 @@
 
 // frequently repeating function
 
-//  const intervalId = setInterval(increaseCount, 2000);
+ const intervalId = setInterval(increaseCount, 1000);
 
-// let count = 0;
-// function increaseCount() {
-//     count++;
-//     console.log(count);
-//     if(count == 5){
-//         clearInterval(intervalId);
-//     }
-// }
+let count = 0;
+function increaseCount() {
+  count++;
+  console.log(count);
+//   if (count == 5) {
+//     clearInterval(intervalId);
+//   }
+}

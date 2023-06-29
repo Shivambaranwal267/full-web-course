@@ -1,3 +1,7 @@
+/*
+
+// this keyword is not used in arrow function only in function
+
 class Vehicle {
   // constructor() {
   //   this.model = "SUZUKI";
@@ -14,17 +18,21 @@ class Vehicle {
   }
 }
 
-class Scooter extends Vehicle {
+// class Scooter extends Vehicle {
 
-}
+// }
 
 const obj1 = new Vehicle("suzuki", 4);
-const obj2 = new Vehicle("Rolls Royce", 4);
+const obj2 = new Vehicle("Rolls Royce", 3);
 
 console.log(obj1);
 console.log(obj2);
 
+
+
 obj1.start();
+obj2.start();
+*/
 
 /*
 const student = {
