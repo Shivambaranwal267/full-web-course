@@ -1,4 +1,4 @@
-function getcheese() {
+async function getcheese() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("cheese 🧀");
@@ -35,8 +35,8 @@ async function orderPizza() {
     console.log(error);
   }
 }
-
-orderPizza().then((pizza) => {
-  console.log(pizza);
-});
-
+orderPizza()
+  .then((pizza) => {
+    console.log(pizza);
+  })
+  .catch((e) => {});

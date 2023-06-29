@@ -1,7 +1,10 @@
+/*
 const orderPizza = () => {
   //   setTimeout(() => {
   //     let pizza = "🍕";
   //   }, 2000);
+
+ 
 
   return new Promise(function (resolve, reject) {
     // ap kuch bhi likh skte hai resolve ya reject ke badle
@@ -28,14 +31,17 @@ PizzaPromise.then((pizza, error) => {
   // reject call catch
   console.log("error Occured", error); //  error occured
 });
+*/
+
 
 // railway ticket
 
 // select seats
-// enter name
+// enter name/details
 // payment method
 
-bookRailwayTicket()
+
+bookRailwayTicket();
 
 function bookRailwayTicket() {
   const seats = "A3;";
@@ -58,6 +64,7 @@ function selectSeats(seat) {
     }, 2000);
   });
 }
+
 
 function enterDetails(name, seat) {
   return new Promise((resolve, reject) => {
